@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌦 Weather Dashboard</h1>
+  </header>
+
+  <main>
+    <!-- Search Section -->
+    <section id="searchSection">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button id="searchBtn">Search</button>
+      <button id="locBtn">📍 Use My Location</button>
+      <button id="unitToggle">Switch to °F</button>
+    </section>
+
+    <!-- Weather Info -->
+    <section id="weatherSection" class="hidden">
+      <h2 id="cityName"></h2>
+      <p id="dateTime"></p>
+      <div id="weatherInfo"></div>
+      <p>Humidity: <span id="humidity"></span>%</p>
+      <p>Wind: <span id="wind"></span></p>
+      <button id="favBtn">Add to Favorites</button>
+    </section>
+
+    <!-- Forecast -->
+    <section id="forecastSection" class="hidden">
+      <h3>5-Day Forecast</h3>
+      <div id="forecast" class="forecast-grid"></div>
+    </section>
+
+    <!-- Favorites -->
+    <section id="favoritesSection">
+      <h3>⭐ Favorites</h3>
+      <ul id="favoritesList"></ul>
+    </section>
+
+    <!-- Messages -->
+    <div id="messageBox"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
